@@ -1,15 +1,18 @@
 import './App.css'
+import AppRouter from './routes/AppRouter'
+import { NavLink } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><NavLink to='home'>Home</NavLink></li>
+        <li><NavLink to="news">News</NavLink></li>
+        <li><NavLink to="contact">Contact</NavLink></li>
+        <li><NavLink to="about">About</NavLink></li>
       </ul>
+      <AppRouter />
     </>
   )
 }
